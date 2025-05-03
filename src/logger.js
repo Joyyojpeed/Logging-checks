@@ -24,7 +24,7 @@ function logError(operation, error, context = {}) {
   else errorType = 'Runtime Error';
 
   const line = `"${timestamp}","${operation}","${errorType}","${message}","${url}","${method}","${status}","${statusText}"\n`;
+  console.log('Logging error:', line); // Debug statement
   fs.appendFileSync(logPath, line);
 }
-
 module.exports = { logError };

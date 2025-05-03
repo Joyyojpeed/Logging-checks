@@ -3,7 +3,7 @@ const { fetchPost, createPost, updatePost, deletePost } = require('./crud');
 async function main() {
   try {
     console.log('Fetching post...');
-    const post = await fetchPost(1);
+    const post = await fetchPost(99);
     console.log('Fetched post:', post);
     
     console.log('Creating post...');
