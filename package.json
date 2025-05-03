@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^1.9.0"
+  },
+  "scripts": {
+    "test-errors": "node src/errorTests.js",
+  "start": "node src/index.js"
+}
+
+}
